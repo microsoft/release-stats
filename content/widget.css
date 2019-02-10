@@ -1,0 +1,19 @@
+.environmentwidget-container {
+	font-size: xx-small;
+	border-style: solid;
+    border-color: white;
+	height: 100%;
+	width: 100%;
+}
+
+.label-container {
+	margin-left:2px;
+}
+
+.staticlabel {
+	color: black;
+}
+
+#url {
+	margin-left:2px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="../lib/VSS.SDK.min.js"></script>
+    <script type="text/javascript">
+        VSS.init({
+            explicitNotifyLoaded: true,
+            usePlatformStyles: true,
+            configureModuleLoader: true
+        });
+        //The widget entry point integrates the view experience as a VSTS Widget.
+        VSS.require(["../dist/widget/Widget"], function () {            
+            VSS.notifyLoadSucceeded();
+        });
+    </script>
+	<link rel="stylesheet" type="text/css" href="widget.css"></link>
+</head>
+<body>
+	<div id="widgetcontainer" class="environmentwidget-container">
+		<div class="label-container">
+			<label class="staticlabel">Environment Name: </label>
+			<label id="environmentname" class="label"></label>
+		</div>
+		<div class="label-container">
+			<label class="staticlabel">Release Name: </label>
+			<label id="releasename" class="label"></label>
+		</div>
+		<div class="label-container">
+			<label class="staticlabel">Release Definiton: </label>
+			<label id="releasedefinitionname" class="label"></label>
+		</div>
+		<div class="label-container">
+			<label class="staticlabel">Deployment Status: </label>
+			<label id="deploymentstatus" class="label"></label>
+		</div>
+		<div class="label-container">
+			<label class="staticlabel">Build Used: </label>
+			<label id="buildused" class="label"></label>
+		</div>
+		<div class="label-container">
+			<label class="staticlabel">Start Time: </label>
+			<label id="starttime" class="label"></label>
+		</div>
+		<div class="label-container">
+			<label class="staticlabel">End Time: </label>
+			<label id="endtime" class="label"></label>
+		</div>
+		<div class="label-container">
+			<label class="staticlabel">Time Taken: </label>
+			<label id="timetaken" class="label"></label>
+		</div>
+		<div class="error-container" id="errorcontainer">
+			<div class="label-container" id="errorlabelcontainer">
+				<label class="staticlabel" id="errormessagelbl">Error Message: </label>
+				<label id="errormessage" class="label"></label>
+			</div>
+			<a id="url" href="" target="_blank">Error Log</a>
+		</div>
+</body>
+</html>

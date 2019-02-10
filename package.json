@@ -1,0 +1,25 @@
+{
+  "name": "ReleaseStats",
+  "version": "1.0.0",
+  "description": "Widget extension to provide latest deployment status for a particular release environment.",
+  "repository": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jquery": "^3.3.6",
+    "moment": "^2.22.2",
+    "proptypes": "^1.1.0",
+    "react": "^15.6.2",
+    "typescript": "^2.6.1",
+    "vss-web-extension-sdk": "^4.125.2"
+  },
+  "scripts": {
+    "build": "tsc --sourceMap false -p .",
+    "postbuild": "npm run gallery-publish",
+    "package": "tfx extension create",
+    "gallery-publish": "tfx extension publish --rev-version --token TOKENTOPUSH",
+    "clean": "rimraf ./dist && rimraf ./*.vsix"
+  },
+  "devDependencies": {
+    "tfx-cli": "^0.5.10"
+  }
+}

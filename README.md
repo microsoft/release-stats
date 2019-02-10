@@ -1,3 +1,7 @@
+# Introduction 
+This widget is to provide deployment status information relating to a particular environment of a release definition.  If an error is occured during deployment for this particular environment, it will provide the error message.
+
+![Illustration of release environment widget, with dashboard and configuration view.](release-environment-widget.png)
 
 # Contributing
 

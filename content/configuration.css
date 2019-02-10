@@ -1,0 +1,20 @@
+#project-selection {
+    width: 375px;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+
+#release-definition-selection {
+    width: 375px;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+
+#release-environment-selection {
+    width: 375px;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
